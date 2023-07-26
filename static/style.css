@@ -1,0 +1,89 @@
+body {
+ font-family: 'Open Sans', sans-serif;;
+    background: #DA22FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #9733EE, #DA22FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #9733EE, #DA22FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    
+}
+
+
+.div__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffddf8;
+}
+
+
+.div__list h1 {
+    font-size: 50px;
+  
+}
+
+.section__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div__info-container {
+    padding: 10px;
+    margin-top: 10px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: min-content;
+    background-color: #ffddf8;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+
+
+h2 {
+   font-size: 30px;
+}
+
+
+.submit {
+    background-color: #00ff2a;
+    color: #eee;
+  
+    font-size: 20px;
+    border:#ddd solid 2px
+}
+
+
+.submit:hover {
+    background-color: #ff00d4;
+    color: #ccc;
+  
+ 
+}
+
+
+
+.DONE {
+    background-color: #00ff2a;
+    text-align: center;
+}
+
+
+.PENDING {
+    background-color: #f00;
+    text-align: center;
+}
+
+
+.grid-items {
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+}

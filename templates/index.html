@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static', filename= 'style.css')}}">
+
+<section>
+    <div class="div__list">
+        <h1>Task List</h1>
+        <p>Type down the task that you want to schedule</p> <br>
+        <p>*Tap into the state of a task to change it*</p>
+        <form class="div__list-form">
+
+            <input type="text" class="div__list-form-task" name="task">
+            <input type="submit" value="SUBMIT" class="submit">
+        </form>
+       
+    </div>
+
+    <div class="section">
+        
+    </div>
+
+
+
+</section>
+
+
+<script src="{{url_for('static',filename= 'main.js')}}"></script>
