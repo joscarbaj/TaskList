@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("/get-content")
       .then((data) => data.json())
       .then((result) => {
+        console.log(result)
         innerContent = ``
         result.forEach((x, i) => {
           innerContent += `<section class="section__flex">
@@ -63,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(responseData);
                 // Aquí puedes hacer algo con la respuesta del servidor, si es necesario
               })
-              .catch(error => {
+              .catch((error) => {
                 console.error("Error en la solicitud fetch:", error);
               });
 

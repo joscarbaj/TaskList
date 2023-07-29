@@ -24,8 +24,9 @@ def connect_db():
 def Index():
     conn = connect_db()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM tasks")
+    cur.execute("SELECT * FROM tasks ORDER BY id")
     data = cur.fetchall()
+    print(data)
     cur.close()
     conn.close()
 
@@ -75,7 +76,7 @@ def change_state(id):
 def content():
     conn = connect_db()
     cur = conn.cursor()
-    cur.execute("SELECT * FROM tasks")
+    cur.execute("SELECT * FROM tasks  ORDER BY id")
     data = cur.fetchall()
     cur.close()
     conn.close()
